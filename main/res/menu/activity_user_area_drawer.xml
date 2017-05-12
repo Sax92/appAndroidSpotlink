@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mappa"
+            android:icon="@mipmap/ic_map_black_48dp"
+            android:title="Mappa" />
+        <item
+            android:id="@+id/nav_rifornimenti"
+            android:icon="@mipmap/ic_local_gas_station"
+            android:title="Rifornimenti" />
+        <item
+            android:id="@+id/nav_coupon"
+            android:icon="@mipmap/ic_card_giftcard_"
+            android:title="Coupon" />
+        <item
+            android:id="@+id/nav_profilo"
+            android:icon="@mipmap/ic_account_circle"
+            android:title="Profilo" />
+    </group>
+
+
+</menu>

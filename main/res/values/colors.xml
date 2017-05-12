@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009FAF</color>
+    <color name="colorPrimaryDark">#009FAF</color>
+    <color name="colorAccent">#AF0080</color>
+    <color name="bluSpotlink">#009FAF</color>
+</resources>

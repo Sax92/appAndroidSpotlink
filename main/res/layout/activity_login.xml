@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sasha.appspotlink.LoginActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email"
+        android:hint="E-mail"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/lSpot"
+        android:layout_alignStart="@+id/lSpot" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword|text"
+        android:ems="10"
+        android:id="@+id/psw"
+        android:hint="Password"
+        android:layout_below="@+id/email"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/log"
+        android:textSize="30dp"
+
+        android:background="#AF0080"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/psw"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="qui"
+        android:id="@+id/tvRegisterHere"
+        android:layout_marginBottom="47dp"
+        android:textSize="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/lSpot"
+        android:layout_alignEnd="@+id/lSpot"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:textColor="#407ac5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lSpot"
+        android:src="@mipmap/logo_spotlink"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Registrati "
+        android:id="@+id/textView"
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/tvRegisterHere"
+        android:layout_toLeftOf="@+id/tvRegisterHere"
+        android:layout_toStartOf="@+id/tvRegisterHere" />
+
+
+</RelativeLayout>

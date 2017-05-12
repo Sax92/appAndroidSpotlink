@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scrollView"
+    android:layout_above="@+id/rEmail"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sasha.appspotlink.RegisterActivity">
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rNome"
+        android:hint="Nome*"
+        android:singleLine="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rCognome"
+        android:layout_below="@+id/rNome"
+        android:layout_alignRight="@+id/rNome"
+        android:layout_alignEnd="@+id/rNome"
+        android:hint="Cognome*"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/rNome"
+        android:layout_alignStart="@+id/rNome" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/rEmail"
+        android:layout_below="@+id/rCognome"
+        android:hint="E-mail*"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/rCognome"
+        android:layout_alignStart="@+id/rCognome"
+        android:layout_alignRight="@+id/rCognome"
+        android:layout_alignEnd="@+id/rCognome" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/rPsw"
+        android:layout_below="@+id/rEmail"
+        android:hint="Password*"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/rEmail"
+        android:layout_alignStart="@+id/rEmail"
+        android:layout_alignRight="@+id/rEmail"
+        android:layout_alignEnd="@+id/rEmail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/rPsw2"
+        android:layout_below="@+id/rPsw"
+        android:layout_alignRight="@+id/rPsw"
+        android:layout_alignEnd="@+id/rPsw"
+        android:hint="Ripeti password*"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/rPsw"
+        android:layout_alignStart="@+id/rPsw" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/rTel"
+        android:layout_below="@+id/rPsw2"
+        android:layout_alignRight="@+id/rPsw2"
+        android:layout_alignEnd="@+id/rPsw2"
+        android:hint="Tell.fisso"
+        android:inputType="text"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/rPsw2"
+        android:layout_alignStart="@+id/rPsw2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/rCel"
+        android:layout_below="@+id/rTel"
+        android:layout_alignRight="@+id/rTel"
+        android:layout_alignEnd="@+id/rTel"
+        android:hint="Cellulare"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/rTel"
+        android:layout_alignStart="@+id/rTel" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/rData"
+        android:layout_below="@+id/rCel"
+        android:hint="D.nascita:gg/mm/aaaa"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/rCel"
+        android:layout_alignStart="@+id/rCel"
+        android:layout_alignRight="@+id/rCel"
+        android:layout_alignEnd="@+id/rCel" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rIndirizzo"
+        android:layout_below="@+id/rData"
+        android:layout_alignRight="@+id/rData"
+        android:layout_alignEnd="@+id/rData"
+        android:hint="Indirizzo"
+        android:inputType="text"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/rData"
+        android:layout_alignStart="@+id/rData" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/rPiva"
+        android:layout_below="@+id/rIndirizzo"
+        android:hint="P.iva"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/rIndirizzo"
+        android:layout_alignStart="@+id/rIndirizzo"
+        android:layout_alignRight="@+id/rIndirizzo"
+        android:layout_alignEnd="@+id/rIndirizzo" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rCf"
+        android:layout_below="@+id/rPiva"
+        android:layout_alignLeft="@+id/rPiva"
+        android:layout_alignStart="@+id/rPiva"
+        android:layout_alignRight="@+id/rPiva"
+        android:layout_alignEnd="@+id/rPiva"
+        android:hint="Codice Fiscale"
+        android:singleLine="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rCitta"
+        android:hint="Città"
+        android:layout_below="@+id/rCf"
+        android:layout_alignRight="@+id/rCf"
+        android:layout_alignEnd="@+id/rCf"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/rCf"
+        android:layout_alignStart="@+id/rCf" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rProvincia"
+        android:layout_below="@+id/rCitta"
+        android:layout_alignLeft="@+id/rCitta"
+        android:layout_alignStart="@+id/rCitta"
+        android:layout_alignRight="@+id/rCitta"
+        android:layout_alignEnd="@+id/rCitta"
+        android:spinnerMode="dropdown"
+
+
+        android:padding="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRATI"
+        android:id="@+id/bReg"
+        android:nestedScrollingEnabled="true"
+        android:layout_below="@+id/rCap"
+        android:layout_alignRight="@+id/rComune"
+        android:layout_alignEnd="@+id/rComune"
+        android:layout_alignLeft="@+id/rComune"
+        android:layout_alignStart="@+id/rComune"
+        android:background="#AF0080"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rComune"
+        android:layout_below="@+id/rProvincia"
+        android:layout_alignLeft="@+id/rProvincia"
+        android:layout_alignStart="@+id/rProvincia"
+        android:layout_alignRight="@+id/rProvincia"
+        android:layout_alignEnd="@+id/rProvincia"
+        android:spinnerMode="dropdown"
+        android:padding="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rCap"
+        android:layout_alignLeft="@+id/rComune"
+        android:layout_alignStart="@+id/rComune"
+
+        android:layout_below="@+id/rComune"
+        android:hint="CAP"
+        android:layout_alignRight="@+id/bReg"
+        android:layout_alignEnd="@+id/bReg"
+        android:singleLine="true"
+        android:inputType="number" />
+
+
+</RelativeLayout>
+</ScrollView>
